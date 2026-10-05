@@ -8,8 +8,87 @@
         name="description"
         content="Selected publications and future EUNOIA academic and policy outputs."
     >
+
     <title>Publications & Policy Outputs | EUNOIA</title>
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <style>
+        /* Publications by year */
+        .publication-years {
+            display: grid;
+            gap: 1rem;
+        }
+
+        .publication-year {
+            border: 1px solid var(--line, #d9dfe8);
+            border-radius: 14px;
+            background: var(--card, #fff);
+            overflow: hidden;
+        }
+
+        .publication-year > summary {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            padding: 1.15rem 1.35rem;
+            cursor: pointer;
+            font-size: 1.25rem;
+            font-weight: 700;
+            line-height: 1.2;
+            list-style: none;
+            user-select: none;
+        }
+
+        .publication-year > summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .publication-year > summary::after {
+            content: "+";
+            flex: 0 0 auto;
+            width: 2rem;
+            height: 2rem;
+            display: grid;
+            place-items: center;
+            border-radius: 50%;
+            border: 1px solid currentColor;
+            font-size: 1.35rem;
+            font-weight: 400;
+            line-height: 1;
+        }
+
+        .publication-year[open] > summary::after {
+            content: "−";
+        }
+
+        .publication-year > summary:hover {
+            background: rgba(0, 0, 0, 0.025);
+        }
+
+        .publication-year[open] > summary {
+            border-bottom: 1px solid var(--line, #d9dfe8);
+        }
+
+        .publication-year-content {
+            padding: 1.25rem;
+        }
+
+        .publication-year-content .grid {
+            margin: 0;
+        }
+
+        @media (max-width: 700px) {
+            .publication-year > summary {
+                padding: 1rem;
+                font-size: 1.15rem;
+            }
+
+            .publication-year-content {
+                padding: 1rem;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -29,14 +108,17 @@
                 src="assets/images/eunoia-logo.png"
                 alt="EUNOIA — European Union New Order for Integrated Action"
             >
+
             <img
                 src="assets/images/ceuts-logo.png"
                 alt="Center for European Union and Transatlantic Studies"
             >
+
             <img
                 src="assets/images/virginia-tech.jpg"
                 alt="Virginia Tech"
             >
+
             <img
                 src="assets/images/eu-funded.png"
                 alt="Co-funded by the European Union"
@@ -57,15 +139,15 @@
             </button>
 
             <div class="menu">
-                <a href="index.html" class="">About the Project</a>
-                <a href="courses.html" class="">Courses & Learning</a>
-                <a href="team.html" class="">Team</a>
-                <a href="resources.html" class="">Resources & OER</a>
+                <a href="index.html">About the Project</a>
+                <a href="courses.html">Courses & Learning</a>
+                <a href="team.html">Team</a>
+                <a href="resources.html">Resources & OER</a>
                 <a href="publications.html" class="active">
                     Publications & Policy Outputs
                 </a>
-                <a href="news.html" class="">News & Events</a>
-                <a href="contact.html" class="">Contact</a>
+                <a href="news.html">News & Events</a>
+                <a href="contact.html">Contact</a>
             </div>
         </div>
     </nav>
@@ -82,8 +164,9 @@
 
                 <p class="lead">
                     Selected resources relevant to the academic foundations
-                    and thematic scope of EUNOIA. EUNOIA-specific publications
-                    and policy outputs will be added as they are released.
+                    and thematic scope of EUNOIA. Publications and policy outputs
+                    are organized by year. EUNOIA-specific outputs will be added
+                    as they are released.
                 </p>
             </div>
         </section>
@@ -91,359 +174,1173 @@
         <section class="section">
             <div class="wrap">
 
-                <div class="grid grid-2">
+                <div class="publication-years">
 
-                    <article class="card publication">
-                        <h3>
-                            Thomas, M. A., Tokar, V., Teslenko, N., & Fataeva, I.
-                            (2026). Viewing the EU Socioeconomic Terrain for
-                            American Graduate Education (VANTAGE): Teaching
-                            materials (Project No.
-                            101234003-VANTAGE-ERASMUS-JMO-2026-HEI-TCH-RSCH-MODULE).
-                        </h3>
+                    <!-- =====================================================
+                         2026
+                    ====================================================== -->
 
-                        <div class="links">
-                            <a
-                                href="https://doi.org/10.13140/RG.2.2.35799.64166"
-                                target="_blank"
-                                rel="noopener"
-                            >
-                                Teaching Materials / ResearchGate
-                            </a>
+                    <details class="publication-year" open>
+                        <summary>2026</summary>
+
+                        <div class="publication-year-content">
+                            <div class="grid grid-2">
+
+                                <article class="card publication">
+                                    <h3>
+                                        Thomas, M. A., Tokar, V., Teslenko, N., & Fataeva, I.
+                                        (2026). Viewing the EU Socioeconomic Terrain for
+                                        American Graduate Education (VANTAGE): Teaching
+                                        materials (Project No.
+                                        101234003-VANTAGE-ERASMUS-JMO-2026-HEI-TCH-RSCH-MODULE).
+                                    </h3>
+
+                                    <div class="links">
+                                        <a
+                                            href="https://doi.org/10.13140/RG.2.2.35799.64166"
+                                            target="_blank"
+                                            rel="noopener"
+                                        >
+                                            Teaching Materials / ResearchGate
+                                        </a>
+                                    </div>
+                                </article>
+
+                                <article class="card publication">
+                                    <h3>
+                                        Tokar, V. (2026, September). VANTAGE workshop data
+                                        for analysis: EU Economic Security and Gender
+                                        Equality in a Changing World.
+                                    </h3>
+
+                                    <div class="links">
+                                        <a
+                                            href="https://doi.org/10.13140/RG.2.2.24696.00009"
+                                            target="_blank"
+                                            rel="noopener"
+                                        >
+                                            Workshop Data / ResearchGate
+                                        </a>
+
+                                        <a
+                                            href="https://youtu.be/b0I_kx5Nb0c"
+                                            target="_blank"
+                                            rel="noopener"
+                                        >
+                                            Video / YouTube
+                                        </a>
+                                    </div>
+                                </article>
+
+                                <article class="card publication">
+                                    <h3>
+                                        Tokar, V. (2026, September 12). The European Union
+                                        in 30 Minutes: A Crash Course for American Graduate
+                                        Students.
+                                    </h3>
+
+                                    <div class="links">
+                                        <a
+                                            href="https://doi.org/10.5281/zenodo.22721335"
+                                            target="_blank"
+                                            rel="noopener"
+                                        >
+                                            Presentation / Zenodo
+                                        </a>
+
+                                        <a
+                                            href="https://youtu.be/Pd8-TbfLhII"
+                                            target="_blank"
+                                            rel="noopener"
+                                        >
+                                            Video / YouTube
+                                        </a>
+                                    </div>
+                                </article>
+
+                                <article class="card publication">
+                                    <h3>
+                                        Tokar, V. (2026). Post-war demographic security
+                                        in Ukraine: Scenarios and lessons for aging EU
+                                        member states — A strategic analysis of population
+                                        dynamics and policy scenarios [Video]. YouTube.
+                                    </h3>
+
+                                    <div class="links">
+                                        <a
+                                            href="https://youtu.be/kV9T7qsVvlo"
+                                            target="_blank"
+                                            rel="noopener"
+                                        >
+                                            YouTube
+                                        </a>
+
+                                        <a
+                                            href="https://www.academia.edu/164816103/Post_War_Demographic_Security_in_Ukraine_Scenarios_and_Lessons_for_Aging_EU_Member_States"
+                                            target="_blank"
+                                            rel="noopener"
+                                        >
+                                            Academia.edu
+                                        </a>
+
+                                        <a
+                                            href="https://doi.org/10.13140/RG.2.2.14307.21288"
+                                            target="_blank"
+                                            rel="noopener"
+                                        >
+                                            DOI / ResearchGate
+                                        </a>
+                                    </div>
+                                </article>
+
+                                <article class="card publication">
+                                    <h3>
+                                        Tsarouhas, D. (2026).
+                                        ‘Industrial strategy and the green transition’,
+                                        in P. Diamond and A. Skrzypek (eds.)
+                                        <em>The Great Unravelling</em>,
+                                        Brussels: FEPS, pp. 81–97.
+                                    </h3>
+
+                                    <div class="links">
+                                        <a
+                                            href="https://feps-europe.eu/publication/the-great-unravelling/"
+                                            target="_blank"
+                                            rel="noopener"
+                                        >
+                                            FEPS
+                                        </a>
+                                    </div>
+                                </article>
+
+                            </div>
                         </div>
-                    </article>
+                    </details>
 
-                    <article class="card publication">
-                        <h3>
-                            Tokar, V. (2026, September). VANTAGE workshop data
-                            for analysis: EU Economic Security and Gender
-                            Equality in a Changing World.
-                        </h3>
 
-                        <div class="links">
-                            <a
-                                href="https://doi.org/10.13140/RG.2.2.24696.00009"
-                                target="_blank"
-                                rel="noopener"
-                            >
-                                Workshop Data / ResearchGate
-                            </a>
+                    <!-- =====================================================
+                         2025
+                    ====================================================== -->
 
-                            <a
-                                href="https://youtu.be/b0I_kx5Nb0c"
-                                target="_blank"
-                                rel="noopener"
-                            >
-                                Video / YouTube
-                            </a>
+                    <details class="publication-year">
+                        <summary>2025</summary>
+
+                        <div class="publication-year-content">
+                            <div class="grid grid-2">
+
+                                <article class="card publication">
+                                    <h3>
+                                        Tokar, V., Kortukova, T., Teslenko, N., & Vinska, O.
+                                        (2025). The EU migration policy within hybrid
+                                        threats. State University of Trade and Economics.
+                                    </h3>
+
+                                    <div class="links">
+                                        <a
+                                            href="https://dx.doi.org/10.13140/RG.2.2.16260.18561"
+                                            target="_blank"
+                                            rel="noopener"
+                                        >
+                                            DOI / ResearchGate
+                                        </a>
+                                    </div>
+                                </article>
+
+                                <article class="card publication">
+                                    <h3>
+                                        Tokar, V., Honcharova, Y., & Vinska, O. (2025).
+                                        EU gender security. State University of Trade
+                                        and Economics.
+                                    </h3>
+
+                                    <div class="links">
+                                        <a
+                                            href="https://doi.org/10.13140/RG.2.2.10152.23048"
+                                            target="_blank"
+                                            rel="noopener"
+                                        >
+                                            DOI / ResearchGate
+                                        </a>
+                                    </div>
+                                </article>
+
+                                <article class="card publication">
+                                    <h3>
+                                        Tokar, V. (2025). The set of EU economic security
+                                        indicators. State University of Trade and Economics.
+                                    </h3>
+
+                                    <div class="links">
+                                        <a
+                                            href="https://doi.org/10.13140/RG.2.2.12760.56324"
+                                            target="_blank"
+                                            rel="noopener"
+                                        >
+                                            DOI / ResearchGate
+                                        </a>
+                                    </div>
+                                </article>
+
+                                <article class="card publication">
+                                    <h3>
+                                        Tokar, V., Teslenko, N., Vinska, O., Kortukova, T.,
+                                        & Hurzhii, T. (2025). EU Economic Security.
+                                        State University of Trade and Economics.
+                                    </h3>
+
+                                    <div class="links">
+                                        <a
+                                            href="https://dx.doi.org/10.13140/RG.2.2.19615.62880"
+                                            target="_blank"
+                                            rel="noopener"
+                                        >
+                                            DOI / ResearchGate
+                                        </a>
+                                    </div>
+                                </article>
+
+                                <article class="card publication">
+                                    <h3>
+                                        Tsarouhas, D. (2025).
+                                        ‘Path Dependence, Institutional (Non-)Change and
+                                        Politicisation: The EU-Turkey Customs Union and the
+                                        Evolution of German Turkish Trade Ties’,
+                                        <em>German Politics</em>, 34(4): 752–775.
+                                    </h3>
+
+                                    <div class="links">
+                                        <a
+                                            href="https://www.tandfonline.com/doi/full/10.1080/09644008.2025.2501145"
+                                            target="_blank"
+                                            rel="noopener"
+                                        >
+                                            Taylor & Francis
+                                        </a>
+                                    </div>
+                                </article>
+
+                                <article class="card publication">
+                                    <h3>
+                                        Ladi, S., Tsarouhas, D. and Copeland, P. (2025).
+                                        ‘Negotiating the recovery and resilience facility:
+                                        the emergence of coordinative conditionality’,
+                                        <em>Comparative European Politics</em>,
+                                        23: 18–39.
+                                    </h3>
+
+                                    <div class="links">
+                                        <a
+                                            href="https://link.springer.com/article/10.1057/s41295-024-00385-5"
+                                            target="_blank"
+                                            rel="noopener"
+                                        >
+                                            Springer
+                                        </a>
+                                    </div>
+                                </article>
+
+                                <article class="card publication">
+                                    <h3>
+                                        Tsarouhas, D. (2025).
+                                        <em>Turkey’s Defense Industry and the EU SAFE Regulation</em>.
+                                        <em>ELIAMEP Policy Paper</em> 186/2025.
+                                    </h3>
+
+                                    <div class="links">
+                                        <a
+                                            href="https://www.eliamep.gr/en/turkeys-defence-industry-and-the-eu-safe-regulation/"
+                                            target="_blank"
+                                            rel="noopener"
+                                        >
+                                            ELIAMEP
+                                        </a>
+                                    </div>
+                                </article>
+
+                            </div>
                         </div>
-                    </article>
+                    </details>
 
-                    <article class="card publication">
-                        <h3>
-                            Tokar, V. (2026, September 12). The European Union
-                            in 30 Minutes: A Crash Course for American Graduate
-                            Students.
-                        </h3>
 
-                        <div class="links">
-                            <a
-                                href="https://doi.org/10.5281/zenodo.22721335"
-                                target="_blank"
-                                rel="noopener"
-                            >
-                                Presentation / Zenodo
-                            </a>
+                    <!-- =====================================================
+                         2024
+                    ====================================================== -->
 
-                            <a
-                                href="https://youtu.be/Pd8-TbfLhII"
-                                target="_blank"
-                                rel="noopener"
-                            >
-                                Video / YouTube
-                            </a>
+                    <details class="publication-year">
+                        <summary>2024</summary>
+
+                        <div class="publication-year-content">
+                            <div class="grid grid-2">
+
+                                <article class="card publication">
+                                    <h3>
+                                        Cheuri, J., D’Ippoliti, C. and Tsarouhas, D. (2024).
+                                        ‘The twin challenges of technological progress and
+                                        big power competition: The case of active industrial policy’,
+                                        in A. Schieder, L. Andor, M. Maltschnig and
+                                        A. Skrzypek (eds.)
+                                        <em>
+                                            Progressive Ambition: How to Shape Europe
+                                            in the Next Decade
+                                        </em>,
+                                        Brussels: FEPS, pp. 116–133.
+                                    </h3>
+
+                                    <div class="links">
+                                        <a
+                                            href="https://feps-europe.eu/publication/progressive-ambition/"
+                                            target="_blank"
+                                            rel="noopener"
+                                        >
+                                            FEPS
+                                        </a>
+                                    </div>
+                                </article>
+
+                                <article class="card publication">
+                                    <h3>
+                                        Tsarouhas, D. (2024).
+                                        <em>
+                                            Turkey’s “Green” Transformation and the CBAM:
+                                            Challenges and Opportunities
+                                        </em>.
+                                        <em>ELIAMEP Policy Paper</em> 165/2024.
+                                    </h3>
+
+                                    <div class="links">
+                                        <a
+                                            href="https://www.eliamep.gr/publication/%ce%b7-%cf%80%cf%81%ce%ac%cf%83%ce%b9%ce%bd%ce%b7-%ce%bc%ce%b5%cf%84%ce%ac%ce%b2%ce%b1%cf%83%ce%b7-%cf%84%ce%b7%cf%82-%cf%84%ce%bf%cf%85%cf%81%ce%ba%ce%af%ce%b1%cf%82-%ce%ba%ce%b1%ce%b9/"
+                                            target="_blank"
+                                            rel="noopener"
+                                        >
+                                            ELIAMEP
+                                        </a>
+                                    </div>
+                                </article>
+
+                                <article class="card publication">
+                                    <h3>
+                                        Tsarouhas, D. (2024).
+                                        ‘Competitiveness and Economic Security’,
+                                        in M. Ocvirk and J. Moyer (eds.)
+                                        <em>
+                                            Transatlantic Relations under the New
+                                            European Commission
+                                        </em>.
+                                        Washington, DC: Woodrow Wilson International
+                                        Center for Scholars.
+                                    </h3>
+
+                                    <div class="links">
+                                        <a
+                                            href="https://www.wilsoncenter.org/publication/transatlantic-relations-under-new-european-commission"
+                                            target="_blank"
+                                            rel="noopener"
+                                        >
+                                            Wilson Center
+                                        </a>
+                                    </div>
+                                </article>
+
+                            </div>
                         </div>
-                    </article>
+                    </details>
 
-                    <article class="card publication">
-                        <h3>
-                            Tokar, V., Kortukova, T., Teslenko, N., & Vinska, O.
-                            (2025). The EU migration policy within hybrid
-                            threats. State University of Trade and Economics.
-                        </h3>
 
-                        <div class="links">
-                            <a
-                                href="https://dx.doi.org/10.13140/RG.2.2.16260.18561"
-                                target="_blank"
-                                rel="noopener"
-                            >
-                                DOI / ResearchGate
-                            </a>
+                    <!-- =====================================================
+                         2023
+                    ====================================================== -->
+
+                    <details class="publication-year">
+                        <summary>2023</summary>
+
+                        <div class="publication-year-content">
+                            <div class="grid grid-2">
+
+                                <article class="card publication">
+                                    <h3>
+                                        Tsarouhas, D. (2023).
+                                        ‘EU-Turkey Relations and the Migration Issue:
+                                        Transactionalism in Action’,
+                                        in M. Kmezic, A. Prodromidou and P. Gkasis (eds.)
+                                        <em>
+                                            Migration, EU Integration and the Balkan Route
+                                        </em>,
+                                        London: Routledge, pp. 34–50.
+                                    </h3>
+
+                                    <div class="links">
+                                        <a
+                                            href="https://www.routledge.com/Migration-EU-Integration-and-the-Balkan-Route/Kmezic-Prodromidou-Gkasis/p/book/9780367423063"
+                                            target="_blank"
+                                            rel="noopener"
+                                        >
+                                            Routledge
+                                        </a>
+                                    </div>
+                                </article>
+
+                            </div>
                         </div>
-                    </article>
+                    </details>
 
-                    <article class="card publication">
-                        <h3>
-                            Tokar, V., Honcharova, Y., & Vinska, O. (2025).
-                            EU gender security. State University of Trade
-                            and Economics.
-                        </h3>
 
-                        <div class="links">
-                            <a
-                                href="https://doi.org/10.13140/RG.2.2.10152.23048"
-                                target="_blank"
-                                rel="noopener"
-                            >
-                                DOI / ResearchGate
-                            </a>
+                    <!-- =====================================================
+                         2022
+                    ====================================================== -->
+
+                    <details class="publication-year">
+                        <summary>2022</summary>
+
+                        <div class="publication-year-content">
+                            <div class="grid grid-2">
+
+                                <article class="card publication">
+                                    <h3>
+                                        Tsarouhas, D. (2022).
+                                        ‘COVID-19 and EU Economic Governance:
+                                        Building Back Better’,
+                                        in A. Schieder et al. (eds.)
+                                        <em>
+                                            Progressivism after COVID:
+                                            Experiences, Impulses, Ideas
+                                        </em>,
+                                        Brussels: FEPS and European Parliament,
+                                        pp. 224–249.
+                                    </h3>
+
+                                    <div class="links">
+                                        <a
+                                            href="https://feps-europe.eu/publication/next-left-vol-12/"
+                                            target="_blank"
+                                            rel="noopener"
+                                        >
+                                            FEPS
+                                        </a>
+                                    </div>
+                                </article>
+
+                                <article class="card publication">
+                                    <h3>
+                                        Karyotis, G., Labrinakou, C., Markopoulos, I.,
+                                        Tsagroni, V., Rori, L., Skleparis, D. and
+                                        Tsarouhas, D. (2022).
+                                        <em>
+                                            Youth and the European Union: Attitudes,
+                                            Drives and Intergenerational Dynamics
+                                        </em>
+                                        [in Greek]. <em>Dianeosis Report</em>, April.
+                                    </h3>
+
+                                    <div class="links">
+                                        <a
+                                            href="https://www.dianeosis.org/2022/05/neolaia-kai-evropaiki-enosi/"
+                                            target="_blank"
+                                            rel="noopener"
+                                        >
+                                            Dianeosis
+                                        </a>
+                                    </div>
+                                </article>
+
+                            </div>
                         </div>
-                    </article>
+                    </details>
 
-                    <article class="card publication">
-                        <h3>
-                            Tokar, V. (2026). Post-war demographic security
-                            in Ukraine: Scenarios and lessons for aging EU
-                            member states — A strategic analysis of population
-                            dynamics and policy scenarios [Video]. YouTube.
-                        </h3>
 
-                        <div class="links">
-                            <a
-                                href="https://youtu.be/kV9T7qsVvlo"
-                                target="_blank"
-                                rel="noopener"
-                            >
-                                YouTube
-                            </a>
+                    <!-- =====================================================
+                         2021
+                    ====================================================== -->
 
-                            <a
-                                href="https://www.academia.edu/164816103/Post_War_Demographic_Security_in_Ukraine_Scenarios_and_Lessons_for_Aging_EU_Member_States"
-                                target="_blank"
-                                rel="noopener"
-                            >
-                                Academia.edu
-                            </a>
+                    <details class="publication-year">
+                        <summary>2021</summary>
 
-                            <a
-                                href="https://doi.org/10.13140/RG.2.2.14307.21288"
-                                target="_blank"
-                                rel="noopener"
-                            >
-                                DOI / ResearchGate
-                            </a>
+                        <div class="publication-year-content">
+                            <div class="grid grid-2">
+
+                                <article class="card publication">
+                                    <h3>
+                                        Tsarouhas, D. (2021).
+                                        ‘Neoliberalism, Liberal Intergovernmentalism
+                                        and EU-Turkey Relations’,
+                                        in W. Reiners and E. Turhan (eds.)
+                                        <em>
+                                            EU-Turkey Relations:
+                                            Theories, Institutions and Policies
+                                        </em>,
+                                        London: Palgrave, pp. 39–61.
+                                    </h3>
+
+                                    <div class="links">
+                                        <a
+                                            href="https://link.springer.com/chapter/10.1007/978-3-030-70890-0_2"
+                                            target="_blank"
+                                            rel="noopener"
+                                        >
+                                            Springer
+                                        </a>
+                                    </div>
+                                </article>
+
+                                <article class="card publication">
+                                    <h3>
+                                        Tsarouhas, D. (2021).
+                                        <em>
+                                            EU-Turkey Economic Relations and the Customs Union:
+                                            A Rules-Based Approach
+                                        </em>.
+                                        <em>ELIAMEP Policy Paper</em> 68/2021, May.
+                                    </h3>
+
+                                    <div class="links">
+                                        <a
+                                            href="https://www.eliamep.gr/wp-content/uploads/2021/05/Policy-paper-68-Tsarouhas-final.pdf"
+                                            target="_blank"
+                                            rel="noopener"
+                                        >
+                                            ELIAMEP
+                                        </a>
+                                    </div>
+                                </article>
+
+                            </div>
                         </div>
-                    </article>
+                    </details>
 
-                    <article class="card publication">
-                        <h3>
-                            Tokar, V. (2025). The set of EU economic security
-                            indicators. State University of Trade and Economics.
-                        </h3>
 
-                        <div class="links">
-                            <a
-                                href="https://doi.org/10.13140/RG.2.2.12760.56324"
-                                target="_blank"
-                                rel="noopener"
-                            >
-                                DOI / ResearchGate
-                            </a>
+                    <!-- =====================================================
+                         2020
+                    ====================================================== -->
+
+                    <details class="publication-year">
+                        <summary>2020</summary>
+
+                        <div class="publication-year-content">
+                            <div class="grid grid-2">
+
+                                <article class="card publication">
+                                    <h3>
+                                        Ladi, S. and Tsarouhas, D. (2020).
+                                        ‘EU Economic Governance and COVID-19:
+                                        Policy Learning and Windows of Opportunity’,
+                                        <em>Journal of European Integration</em>,
+                                        42(8): 1041–1056.
+                                    </h3>
+
+                                    <div class="links">
+                                        <a
+                                            href="https://www.tandfonline.com/doi/full/10.1080/07036337.2020.1852231"
+                                            target="_blank"
+                                            rel="noopener"
+                                        >
+                                            Taylor & Francis
+                                        </a>
+                                    </div>
+                                </article>
+
+                            </div>
                         </div>
-                    </article>
+                    </details>
 
-                    <article class="card publication">
-                        <h3>
-                            Tokar, V., Teslenko, N., Vinska, O., Kortukova, T.,
-                            & Hurzhii, T. (2025). EU Economic Security.
-                            State University of Trade and Economics.
-                        </h3>
 
-                        <div class="links">
-                            <a
-                                href="https://dx.doi.org/10.13140/RG.2.2.19615.62880"
-                                target="_blank"
-                                rel="noopener"
-                            >
-                                DOI / ResearchGate
-                            </a>
+                    <!-- =====================================================
+                         2019
+                    ====================================================== -->
+
+                    <details class="publication-year">
+                        <summary>2019</summary>
+
+                        <div class="publication-year-content">
+                            <div class="grid grid-2">
+
+                                <article class="card publication">
+                                    <h3>
+                                        Aybars, A. I., Copeland, P. and Tsarouhas, D. (2019).
+                                        ‘Europeanization without substance?
+                                        EU-Turkey Relations and gender equality in employment’,
+                                        <em>Comparative European Politics</em>,
+                                        17(5): 778–796.
+                                    </h3>
+
+                                    <div class="links">
+                                        <a
+                                            href="https://link.springer.com/article/10.1057/s41295-018-0125-2"
+                                            target="_blank"
+                                            rel="noopener"
+                                        >
+                                            Springer
+                                        </a>
+                                    </div>
+                                </article>
+
+                                <article class="card publication">
+                                    <h3>
+                                        Tsarouhas, D. (2019).
+                                        ‘Turkey and the European Migration Crisis:
+                                        Apprehensive Cooperation’,
+                                        in A. Prodromidou and P. Gkasis (eds.)
+                                        <em>
+                                            Along the Balkan Route: The Impact of the
+                                            Post-2014 Migration ‘Crisis’ on the EU’s
+                                            South East Periphery
+                                        </em>,
+                                        Berlin: Konrad Adenauer Foundation,
+                                        pp. 28–42.
+                                    </h3>
+                                </article>
+
+                                <article class="card publication">
+                                    <h3>
+                                        Tsarouhas, D. (2019).
+                                        ‘The EU in Crises: Brexit, Populism and
+                                        the Future of the Union’,
+                                        in P. Diamond (ed.)
+                                        <em>
+                                            The Next Phase of Globalisation:
+                                            Democracy, Capitalism and Inequality
+                                        </em>,
+                                        London and New York: IB Tauris,
+                                        pp. 127–143.
+                                    </h3>
+
+                                    <div class="links">
+                                        <a
+                                            href="https://www.bloomsburycollections.com/book/the-crisis-of-globalization-democracy-capitalism-and-inequality-in-the-twenty-first-century/ch7-the-eu-in-crises-brexit-populism-and-the-future-of-the-union"
+                                            target="_blank"
+                                            rel="noopener"
+                                        >
+                                            Bloomsbury
+                                        </a>
+                                    </div>
+                                </article>
+
+                                <article class="card publication">
+                                    <h3>
+                                        Tsarouhas, D. (2019).
+                                        <em>MIGRATE Policy Paper</em>,
+                                        October 2019.
+                                    </h3>
+
+                                    <div class="links">
+                                        <a
+                                            href="http://www.migrate-project.com/deliverables/"
+                                            target="_blank"
+                                            rel="noopener"
+                                        >
+                                            MIGRATE
+                                        </a>
+                                    </div>
+                                </article>
+
+                            </div>
                         </div>
-                    </article>
-                    <article class="card publication">
-    <h3>
-        Parker, O. and Tsarouhas, D. (2018).
-        <em>
-            Crisis in the Eurozone Periphery: The Political Economies of Greece,
-            Spain, Portugal and Ireland.
-        </em>
-        London: Palgrave.
-    </h3>
+                    </details>
 
-    <div class="links">
-        <a
-            href="https://link.springer.com/book/10.1007/978-3-319-69721-5"
-            target="_blank"
-            rel="noopener"
-        >
-            Springer
-        </a>
-    </div>
-</article>
 
-<article class="card publication">
-    <h3>
-        Tsarouhas, D. (2025).
-        ‘Path Dependence, Institutional (Non-)Change and Politicisation:
-        The EU-Turkey Customs Union and the Evolution of German Turkish Trade Ties’,
-        <em>German Politics</em>, 34(4): 752–775.
-    </h3>
+                    <!-- =====================================================
+                         2018
+                    ====================================================== -->
 
-    <div class="links">
-        <a
-            href="https://www.tandfonline.com/doi/full/10.1080/09644008.2025.2501145"
-            target="_blank"
-            rel="noopener"
-        >
-            Taylor & Francis
-        </a>
-    </div>
-</article>
+                    <details class="publication-year">
+                        <summary>2018</summary>
 
-<article class="card publication">
-    <h3>
-        Ladi, S., Tsarouhas, D. and Copeland, P. (2025).
-        ‘Negotiating the recovery and resilience facility:
-        the emergence of coordinative conditionality’,
-        <em>Comparative European Politics</em>, 23: 18–39.
-    </h3>
+                        <div class="publication-year-content">
+                            <div class="grid grid-2">
 
-    <div class="links">
-        <a
-            href="https://link.springer.com/article/10.1057/s41295-024-00385-5"
-            target="_blank"
-            rel="noopener"
-        >
-            Springer
-        </a>
-    </div>
-</article>
+                                <article class="card publication">
+                                    <h3>
+                                        Parker, O. and Tsarouhas, D. (2018).
+                                        <em>
+                                            Crisis in the Eurozone Periphery:
+                                            The Political Economies of Greece,
+                                            Spain, Portugal and Ireland.
+                                        </em>
+                                        London: Palgrave.
+                                    </h3>
 
-<article class="card publication">
-    <h3>
-        Ladi, S. and Tsarouhas, D. (2020).
-        ‘EU Economic Governance and COVID-19:
-        Policy Learning and Windows of Opportunity’,
-        <em>Journal of European Integration</em>, 42(8): 1041–1056.
-    </h3>
+                                    <div class="links">
+                                        <a
+                                            href="https://link.springer.com/book/10.1007/978-3-319-69721-5"
+                                            target="_blank"
+                                            rel="noopener"
+                                        >
+                                            Springer
+                                        </a>
+                                    </div>
+                                </article>
 
-    <div class="links">
-        <a
-            href="https://www.tandfonline.com/doi/full/10.1080/07036337.2020.1852231"
-            target="_blank"
-            rel="noopener"
-        >
-            Taylor & Francis
-        </a>
-    </div>
-</article>
+                                <article class="card publication">
+                                    <h3>
+                                        Tsarouhas, D. and Mutluer, D. (2018).
+                                        ‘EU Foreign Policy and “Perceived Coherence”:
+                                        The Case of Kosovo’,
+                                        <em>Southeast European and Black Sea Studies</em>,
+                                        18(3): 419–438.
+                                    </h3>
 
-<article class="card publication">
-    <h3>
-        Aybars, A. I., Copeland, P. and Tsarouhas, D. (2019).
-        ‘Europeanization without substance?
-        EU-Turkey Relations and gender equality in employment’,
-        <em>Comparative European Politics</em>, 17(5): 778–796.
-    </h3>
+                                    <div class="links">
+                                        <a
+                                            href="https://www.tandfonline.com/doi/abs/10.1080/14683857.2018.1518845"
+                                            target="_blank"
+                                            rel="noopener"
+                                        >
+                                            Taylor & Francis
+                                        </a>
+                                    </div>
+                                </article>
 
-    <div class="links">
-        <a
-            href="https://link.springer.com/article/10.1057/s41295-018-0125-2"
-            target="_blank"
-            rel="noopener"
-        >
-            Springer
-        </a>
-    </div>
-</article>
+                                <article class="card publication">
+                                    <h3>
+                                        Tsarouhas, D. (2018).
+                                        ‘Turkey: Identity Politics and Reticent Europeanization’,
+                                        in M. Mannin and P. Flenley (eds.)
+                                        <em>
+                                            The EU and its Eastern Neighbourhood:
+                                            The Contradictions of Europeanisation
+                                            and European Identities
+                                        </em>,
+                                        Manchester: Manchester University Press,
+                                        pp. 126–138.
+                                    </h3>
 
-<article class="card publication">
-    <h3>
-        Tsarouhas, D. and Mutluer, D. (2018).
-        ‘EU Foreign Policy and “Perceived Coherence”:
-        The Case of Kosovo’,
-        <em>Southeast European and Black Sea Studies</em>,
-        18(3): 419–438.
-    </h3>
+                                    <div class="links">
+                                        <a
+                                            href="https://manchester.universitypressscholarship.com/view/10.7228/manchester/9781526109095.001.0001/upso-9781526109095-chapter-009"
+                                            target="_blank"
+                                            rel="noopener"
+                                        >
+                                            Manchester University Press
+                                        </a>
+                                    </div>
+                                </article>
 
-    <div class="links">
-        <a
-            href="https://www.tandfonline.com/doi/abs/10.1080/14683857.2018.1518845"
-            target="_blank"
-            rel="noopener"
-        >
-            Taylor & Francis
-        </a>
-    </div>
-</article>
+                            </div>
+                        </div>
+                    </details>
 
-<article class="card publication">
-    <h3>
-        Ladi, S. and Tsarouhas, D. (2017).
-        ‘International diffusion of regulatory governance:
-        EU actorness in public procurement’,
-        <em>Regulation & Governance</em>, 11(4): 388–403.
-    </h3>
 
-    <div class="links">
-        <a
-            href="https://onlinelibrary.wiley.com/doi/abs/10.1111/rego.12163"
-            target="_blank"
-            rel="noopener"
-        >
-            Wiley
-        </a>
-    </div>
-</article>
+                    <!-- =====================================================
+                         2017
+                    ====================================================== -->
 
-<article class="card publication">
-    <h3>
-        Tsarouhas, D. and Ladi, S. (2014).
-        ‘The Politics of Austerity and Public Policy Reform in the EU’,
-        <em>Political Studies Review</em>, 12(2): 171–180.
-    </h3>
+                    <details class="publication-year">
+                        <summary>2017</summary>
 
-    <div class="links">
-        <a
-            href="https://journals.sagepub.com/doi/abs/10.1111/1478-9302.12048"
-            target="_blank"
-            rel="noopener"
-        >
-            SAGE Journals
-        </a>
-    </div>
-</article>
+                        <div class="publication-year-content">
+                            <div class="grid grid-2">
 
-<article class="card publication">
-    <h3>
-        Tsarouhas, D. and Ladi, S. (2013).
-        ‘Globalisation and/or Europeanisation?
-        The Case of Flexicurity’,
-        <em>New Political Economy</em>, 18(4): 480–502.
-    </h3>
+                                <article class="card publication">
+                                    <h3>
+                                        Ladi, S. and Tsarouhas, D. (2017).
+                                        ‘International diffusion of regulatory governance:
+                                        EU actorness in public procurement’,
+                                        <em>Regulation & Governance</em>,
+                                        11(4): 388–403.
+                                    </h3>
 
-    <div class="links">
-        <a
-            href="https://www.tandfonline.com/doi/abs/10.1080/13563467.2012.717612"
-            target="_blank"
-            rel="noopener"
-        >
-            Taylor & Francis
-        </a>
-    </div>
-</article>
+                                    <div class="links">
+                                        <a
+                                            href="https://onlinelibrary.wiley.com/doi/abs/10.1111/rego.12163"
+                                            target="_blank"
+                                            rel="noopener"
+                                        >
+                                            Wiley
+                                        </a>
+                                    </div>
+                                </article>
+
+                            </div>
+                        </div>
+                    </details>
+
+
+                    <!-- =====================================================
+                         2016
+                    ====================================================== -->
+
+                    <details class="publication-year">
+                        <summary>2016</summary>
+
+                        <div class="publication-year-content">
+                            <div class="grid grid-2">
+
+                                <article class="card publication">
+                                    <h3>
+                                        Tsarouhas, D. (2016).
+                                        ‘Social Policy in the EU and Turkey:
+                                        The Limits of Europeanization’,
+                                        in Ç. Nas and Y. Özer (eds.)
+                                        <em>
+                                            Turkey and the European Union:
+                                            Processes of Europeanization
+                                        </em>,
+                                        London: Routledge, pp. 161–180.
+                                    </h3>
+
+                                    <div class="links">
+                                        <a
+                                            href="https://www.taylorfrancis.com/chapters/edit/10.4324/9781315549569-9/social-policy-eu-turkey-limits-europeanisation-dimitris-tsarouhas"
+                                            target="_blank"
+                                            rel="noopener"
+                                        >
+                                            Taylor & Francis
+                                        </a>
+                                    </div>
+                                </article>
+
+                                <article class="card publication">
+                                    <h3>
+                                        Tsarouhas, D. (2016).
+                                        ‘Rethinking the European Social Model’,
+                                        in E. Stetter, K. Duffek and A. Skrzypek (eds.)
+                                        <em>Delivering Empowered Welfare Societies</em>,
+                                        Brussels: FEPS, pp. 126–146.
+                                    </h3>
+
+                                    <div class="links">
+                                        <a
+                                            href="https://www.feps-europe.eu/events/past-events/312-european-social-model-revisited-changes-and-challenges-in-the-debate-on-the-european-social-rights-pillar.html"
+                                            target="_blank"
+                                            rel="noopener"
+                                        >
+                                            FEPS
+                                        </a>
+                                    </div>
+                                </article>
+
+                            </div>
+                        </div>
+                    </details>
+
+
+                    <!-- =====================================================
+                         2015
+                    ====================================================== -->
+
+                    <details class="publication-year">
+                        <summary>2015</summary>
+
+                        <div class="publication-year-content">
+                            <div class="grid grid-2">
+
+                                <article class="card publication">
+                                    <h3>
+                                        Tsarouhas, D. (2015).
+                                        ‘Whither Flexicurity? Discursive Exercises
+                                        and Empirical Reality in European Labour Market Reform’,
+                                        in E. Stetter, K. Duffek and A. Skrzypek (eds.)
+                                        <em>For a Connecting Progressive Agenda</em>,
+                                        Brussels: FEPS, pp. 236–262.
+                                    </h3>
+
+                                    <div class="links">
+                                        <a
+                                            href="https://www.feps-europe.eu/Assets/Publications/PostFiles/319_1.pdf"
+                                            target="_blank"
+                                            rel="noopener"
+                                        >
+                                            FEPS
+                                        </a>
+                                    </div>
+                                </article>
+
+                            </div>
+                        </div>
+                    </details>
+
+
+                    <!-- =====================================================
+                         2014
+                    ====================================================== -->
+
+                    <details class="publication-year">
+                        <summary>2014</summary>
+
+                        <div class="publication-year-content">
+                            <div class="grid grid-2">
+
+                                <article class="card publication">
+                                    <h3>
+                                        Tsarouhas, D. and Ladi, S. (2014).
+                                        ‘The Politics of Austerity and Public Policy Reform
+                                        in the EU’,
+                                        <em>Political Studies Review</em>,
+                                        12(2): 171–180.
+                                    </h3>
+
+                                    <div class="links">
+                                        <a
+                                            href="https://journals.sagepub.com/doi/abs/10.1111/1478-9302.12048"
+                                            target="_blank"
+                                            rel="noopener"
+                                        >
+                                            SAGE Journals
+                                        </a>
+                                    </div>
+                                </article>
+
+                            </div>
+                        </div>
+                    </details>
+
+
+                    <!-- =====================================================
+                         2013
+                    ====================================================== -->
+
+                    <details class="publication-year">
+                        <summary>2013</summary>
+
+                        <div class="publication-year-content">
+                            <div class="grid grid-2">
+
+                                <article class="card publication">
+                                    <h3>
+                                        Tsarouhas, D. and Ladi, S. (2013).
+                                        ‘Globalisation and/or Europeanisation?
+                                        The Case of Flexicurity’,
+                                        <em>New Political Economy</em>,
+                                        18(4): 480–502.
+                                    </h3>
+
+                                    <div class="links">
+                                        <a
+                                            href="https://www.tandfonline.com/doi/abs/10.1080/13563467.2012.717612"
+                                            target="_blank"
+                                            rel="noopener"
+                                        >
+                                            Taylor & Francis
+                                        </a>
+                                    </div>
+                                </article>
+
+                                <article class="card publication">
+                                    <h3>
+                                        Tsarouhas, D. (2013).
+                                        ‘Legitimacy and Progressive Politics:
+                                        European Integration and Institutional Reform
+                                        in an Era of Crisis’,
+                                        in E. Stetter, K. Duffek and A. Skrzypek (eds.)
+                                        <em>Framing a New Progressive Narrative</em>,
+                                        Brussels: FEPS, pp. 236–247.
+                                    </h3>
+
+                                    <div class="links">
+                                        <a
+                                            href="https://www.feps-europe.eu/resources/publications/23:next-left-vol-viii-framing-a-new-progressive-narrative.html"
+                                            target="_blank"
+                                            rel="noopener"
+                                        >
+                                            FEPS
+                                        </a>
+                                    </div>
+                                </article>
+
+                                <article class="card publication">
+                                    <h3>
+                                        Tsarouhas, D. (2013).
+                                        ‘The European Social Dialogue:
+                                        Between Managerialism and a New Governance Architecture’,
+                                        in E. Stetter, K. Duffek and A. Skrzypek (eds.)
+                                        <em>For a New Social Deal</em>,
+                                        Brussels: FEPS, pp. 163–188.
+                                    </h3>
+
+                                    <div class="links">
+                                        <a
+                                            href="https://www.feps-europe.eu/Assets/Publications/PostFiles/574_1.pdf"
+                                            target="_blank"
+                                            rel="noopener"
+                                        >
+                                            FEPS
+                                        </a>
+                                    </div>
+                                </article>
+
+                            </div>
+                        </div>
+                    </details>
+
+
+                    <!-- =====================================================
+                         2012
+                    ====================================================== -->
+
+                    <details class="publication-year">
+                        <summary>2012</summary>
+
+                        <div class="publication-year-content">
+                            <div class="grid grid-2">
+
+                                <article class="card publication">
+                                    <h3>
+                                        Tsarouhas, D. (2012).
+                                        ‘Social Policy in the EU and Turkey:
+                                        The Limits of Europeanization’,
+                                        in Ç. Nas and Y. Özer (eds.)
+                                        <em>
+                                            Turkey and the European Union:
+                                            Processes of Europeanization
+                                        </em>,
+                                        Aldershot: Ashgate, pp. 276–298.
+                                        Republished in 2016.
+                                    </h3>
+
+                                    <div class="links">
+                                        <a
+                                            href="https://www.taylorfrancis.com/chapters/edit/10.4324/9781315549569-9/social-policy-eu-turkey-limits-europeanisation-dimitris-tsarouhas"
+                                            target="_blank"
+                                            rel="noopener"
+                                        >
+                                            Taylor & Francis
+                                        </a>
+                                    </div>
+                                </article>
+
+                            </div>
+                        </div>
+                    </details>
+
+
+                    <!-- =====================================================
+                         2011
+                    ====================================================== -->
+
+                    <details class="publication-year">
+                        <summary>2011</summary>
+
+                        <div class="publication-year-content">
+                            <div class="grid grid-2">
+
+                                <article class="card publication">
+                                    <h3>
+                                        Tsarouhas, D. (2011).
+                                        ‘In Search of a New Employment Paradigm:
+                                        Is ‘Flexicurity’ the Answer?’,
+                                        in E. Stetter, K. Duffek and A. Skrzypek (eds.)
+                                        <em>Next Left: Towards a New Strategy</em>,
+                                        Brussels: Foundation for European Progressive Studies,
+                                        pp. 180–186.
+                                    </h3>
+
+                                    <div class="links">
+                                        <a
+                                            href="https://www.feps-europe.eu/resources/publications/137:next-left-vol-iii-towards-a-new-strategy.html"
+                                            target="_blank"
+                                            rel="noopener"
+                                        >
+                                            FEPS
+                                        </a>
+                                    </div>
+                                </article>
+
+                            </div>
+                        </div>
+                    </details>
+
+
+                    <!-- =====================================================
+                         2009
+                    ====================================================== -->
+
+                    <details class="publication-year">
+                        <summary>2009</summary>
+
+                        <div class="publication-year-content">
+                            <div class="grid grid-2">
+
+                                <article class="card publication">
+                                    <h3>
+                                        Tsarouhas, D. (2009).
+                                        ‘A New Swedish Model?
+                                        Swedish Social Democracy at Crossroads’,
+                                        in J. Callaghan, N. Fishman, B. Jackson
+                                        and M. McIvor (eds.)
+                                        <em>
+                                            In Search of Social Democracy:
+                                            Responses to Crisis and Modernization
+                                        </em>,
+                                        Manchester: Manchester University Press,
+                                        pp. 112–128.
+                                    </h3>
+
+                                    <div class="links">
+                                        <a
+                                            href="https://www.manchesteropenhive.com/view/9781526125095/9781526125095.00013.xml"
+                                            target="_blank"
+                                            rel="noopener"
+                                        >
+                                            Manchester University Press
+                                        </a>
+                                    </div>
+                                </article>
+
+                            </div>
+                        </div>
+                    </details>
+
+
+                    <!-- =====================================================
+                         2006
+                    ====================================================== -->
+
+                    <details class="publication-year">
+                        <summary>2006</summary>
+
+                        <div class="publication-year-content">
+                            <div class="grid grid-2">
+
+                                <article class="card publication">
+                                    <h3>
+                                        Duman, Ö. and Tsarouhas, D. (2006).
+                                        ‘Civilianization’ in Greece vs. ‘Demilitarization’
+                                        in Turkey: A Comparative Study of the Civil-Military
+                                        Relations and the Impact of the European Union,
+                                        <em>Armed Forces and Society</em>,
+                                        32(3): 403–426.
+                                    </h3>
+
+                                    <div class="links">
+                                        <a
+                                            href="https://journals.sagepub.com/doi/abs/10.1177/0095327X05282122"
+                                            target="_blank"
+                                            rel="noopener"
+                                        >
+                                            SAGE Journals
+                                        </a>
+                                    </div>
+                                </article>
+
+                                <article class="card publication">
+                                    <h3>
+                                        Tsarouhas, D. (2006).
+                                        ‘European Integration and Path Dependence:
+                                        Explaining the Evolution of EU Social Policy’,
+                                        <em>European Political Economy Review</em>,
+                                        3(2): 87–111.
+                                    </h3>
+
+                                    <div class="links">
+                                        <a
+                                            href="https://www.researchgate.net/profile/Dimitris-Tsarouhas/publication/23786610_European_Integration_and_Path_Dependence_Explaining_the_Evolution_of_EU_Social_Policy/links/552286a30cf2a2d9e1456570/European-Integration-and-Path-Dependence-Explaining-the-Evolution-of-EU-Social-Policy.pdf"
+                                            target="_blank"
+                                            rel="noopener"
+                                        >
+                                            ResearchGate
+                                        </a>
+                                    </div>
+                                </article>
+
+                            </div>
+                        </div>
+                    </details>
 
                 </div>
+
+
+                <!-- =========================================================
+                     FORTHCOMING EUNOIA OUTPUTS
+                ========================================================== -->
 
                 <div class="placeholder" style="margin-top:1.5rem">
                     <strong>EUNOIA outputs forthcoming</strong>
