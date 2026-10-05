@@ -1,7 +1,7 @@
 const SITE_CONFIG = {
   contactEmail: "jmo.eunoia@gmail.com",
-  linkedinUrl: "", // Add the project LinkedIn URL here when available.
-  xUrl: ""         // Add the project X URL here when available.
+  linkedinUrl: "https://www.linkedin.com/company/eunoia-–-jmo/",
+  xUrl: "https://x.com/EUNOIA_JMO"
 };
 
 function socialLink(label, url) {
